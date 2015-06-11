@@ -1,0 +1,41 @@
+﻿.facets ul, .results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.facets label {
+    font-size: 1em;
+}
+
+.facets input {
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+.facets span {
+    display: block;
+    line-height: 11px;
+    float: left;
+    margin-left: 5px;
+}
+
+.results li {
+    margin: 15px 0;
+    padding: 15px 0 0 0;
+}
+
+.results li {
+    border-top:solid 1px #5bc0de;
+}
+    .results li:first-child {
+        border: none;
+    }
+
+.product-name {
+    font-weight: bold;
+}
+
+.category {
+    font-style: italic;
+}

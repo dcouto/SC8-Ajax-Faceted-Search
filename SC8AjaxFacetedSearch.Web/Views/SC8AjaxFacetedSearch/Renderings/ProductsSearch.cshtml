@@ -1,0 +1,32 @@
+﻿<div class="col-xs-12">
+    <h1>Products Search</h1>    
+</div>
+
+<div class="facets col-sm-3">
+    <ul data-bind="foreach: facetCategories">
+        <li>
+            <h2 data-bind="text: name"></h2>
+            
+            <ul data-bind="foreach: facets">
+                <li>
+                    <label><input type="checkbox" data-bind="value: id, checked: active" /> <span data-bind="text: name + ' (' + count + ')'"></span></label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    
+</div>
+
+<div class="results col-sm-9">
+    <h2>Results</h2>
+
+    <ul data-bind="foreach: products">
+        <li>
+            <span class="product-name" data-bind="text: ProductName"></span>
+            <br/>
+            <span data-bind="text: '$' + Price"></span>
+            <br/>
+            <span class="category" data-bind="text: Category"></span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,10 @@
+﻿@using Sitecore.Mvc
+
+@model SC8AjaxFacetedSearch.Models.Importer.Importer
+
+<h1>@Html.Sitecore().CurrentItem.Name</h1>
+
+@foreach (var msg in Model.Messages)
+{
+    <p>@msg</p>
+}
